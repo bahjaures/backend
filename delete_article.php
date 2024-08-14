@@ -1,0 +1,41 @@
+<?php
+session_start();
+include 'includes/db.php';
+
+if ($_SESSION['role'] != 'artisan') {
+    header("Location: login.php");
+    exit();
+}
+
+$user_id = $_SESSION['user_id'];
+
+// Vérifier que l'utilisateur existe dans la table Artisans
+$sql_check = "SELECT id_Artisans FROM Artisans WHERE id_utilisateur = ?";
+$stmt_check = $conn->prepare($sql_check);
+$stmt_check->bind_param("i", $user_id);
+$stmt_check->execute();
+$stmt_check->bind_result($id_artisan);
+$stmt_check->fetch();
+$stmt_check->close();
+
+if (!$id_artisan) {
+    echo "Erreur : Utilisateur non trouvé dans les artisans.";
+    exit();
+}
+
+$article_id = $_GET['id'];
+
+// Supprimer l'article
+$sql = "DELETE FROM Articles WHERE id_Articles = ? AND id_artisans = ?";
+$stmt = $conn->prepare($sql);
+$stmt->bind_param("ii", $article_id, $id_artisan);
+
+if ($stmt->execute()) {
+    echo "Article supprimé avec succès.";
+} else {
+    echo "Erreur: " . $stmt->error;
+}
+
+$stmt->close();
+header("Location: manage_articles.php");
+exit();

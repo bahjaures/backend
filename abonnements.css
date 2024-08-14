@@ -1,0 +1,169 @@
+/* style.css */
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #e26f03;
+    padding: 20px;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    background-color: #218838;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th,
+table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+table th {
+    background-color: #08335f;
+    color: white;
+    text-align: left;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #ddd;
+}
+
+/* Button Styles */
+button,
+.btn {
+    background-color: #ff9800;
+    /* Orange */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover,
+.btn:hover {
+    background-color: #e68900;
+    /* Darker Orange */
+}
+
+.btn-primary {
+    background-color: #e26f03;
+    /* Blue */
+}
+
+.btn-primary:hover {
+    background-color: #13b401;
+    /* Darker Blue */
+}
+
+.btn-success {
+    background-color: #28a745;
+    /* Green */
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    /* Darker Green */
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    /* Red */
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+    /* Darker Red */
+}
+
+/* Alert Styles */
+.alert {
+    padding: 20px;
+    background-color: #f44336;
+    /* Red */
+    color: white;
+    margin-bottom: 15px;
+}
+
+.alert-info {
+    background-color: #e26f03;
+    /* Blue */
+}
+
+/* Custom Styles */
+.text-orange {
+    color: #ff9800;
+}
+
+.text-green {
+    color: #28a745;
+}
+
+.mt-3 {
+    margin-top: 1rem !important;
+}
+
+.mt-4 {
+    margin-top: 1.5rem !important;
+}
+
+.mt-5 {
+    margin-top: 3rem !important;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem !important;
+}

@@ -1,0 +1,38 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.jumbotron {
+    background-color: #166e02;
+    color: white;
+    padding: 2rem 1rem;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.card:hover{  
+transform: scale(1.05);
+background-color: #166e02;
+}
+
+.card-title {
+    margin-top: 1rem;
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+}
+
+footer a {
+    color: white;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    background-color: #166e02;
+    text-decoration: none;
+}

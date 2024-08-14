@@ -1,0 +1,74 @@
+/* artisan.css */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #40ab02;
+}
+
+header {
+    background-color: #364034;
+}
+
+header h1 {
+    color: #f8f9fa;
+}
+
+.nav-link {
+    color: #f8f9fa;
+}
+
+.card {
+    background-color: #f8f9fa;
+    border: 2px solid #40ab02;
+    border-radius: 10px;
+}
+
+.card-title {
+    color: #40ab02;
+}
+
+.btn-primary {
+    background-color: #fc9401;
+    border: none;
+    border-radius: 5px;
+    color: #f8f9fa;
+}
+
+.btn-primary:hover {
+    background-color: #40ab02;
+    color: #364034;
+}
+
+.static-card {
+    height: 100%;
+}
+
+.footer {
+    background-color: #364034;
+    color: #f8f9fa;
+}
+
+.list-group-item {
+    background-color: #f8f9fa;
+    border: none;
+}
+
+.list-group-item:hover {
+    background-color: #40ab02;
+    color: #f8f9fa;
+}
+
+.list-group-item p {
+    margin: 0;
+}
+
+.container .card-body {
+    height: 100%;
+}
+
+.footer a {
+    color: #f8f9fa;
+}
+
+.footer a:hover {
+    color: #40ab02;
+}

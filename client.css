@@ -1,0 +1,51 @@
+/* styles.css */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ce7100;
+}
+
+header {
+    background-color: #364034;
+}
+
+header h1 {
+    color: #f8f9fa;
+}
+
+.nav-link {
+    color: #f8f9fa !important;
+}
+
+.card {
+    border-radius: 15px;
+}
+
+.card:hover {
+    transform: scale(1.07);
+}
+
+.card-title {
+    color: #344034;
+}
+
+.btn-primary {
+    background-color: #09c402;
+    border-color: #007bff;
+    border-radius: 15px;
+}
+
+.btn-primary:hover {
+    background-color: #f18e02;
+    border-color: #004085;
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #364034;
+    color: #f8f9fa;
+}
+
+footer a {
+    color: #f8f9fa;
+    text-decoration: underline;
+}

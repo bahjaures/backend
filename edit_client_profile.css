@@ -1,0 +1,130 @@
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #57d403;
+        color: #212529;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    header {
+        background-color: #343a40;
+        color: #fff;
+        padding: 12px 0;
+        text-align: center;
+    }
+
+    header h1 {
+        margin: 0;
+        padding: 6px;
+        text-align: left;
+        
+    }
+
+    header nav ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    header nav ul li {
+        display: inline;
+        margin-right: 10px;
+    }
+
+    header nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        padding: 5px 10px;
+        background-color: #ff7b00;
+        border-radius: 5px;
+    }
+
+    header nav ul li a:hover {
+        background-color: #0056b3;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: auto;
+        padding: 40px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+        margin-bottom: 30px;
+        flex-grow: 1;
+    }
+
+    h2 {
+        color: #ff7b00;
+    }
+
+    form {
+        margin-bottom: 5px;
+    }
+
+    form label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    form input,
+    form button {
+        width: 90%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: 1px solid #ced4da;
+    }
+
+    form button {
+        background-color: #ff7b00;
+        color: #fff;
+        border: none;
+    }
+
+    form button:hover {
+        background-color: #1bb500;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
+
+    table,
+    th,
+    td {
+        border: 1px solid #dee2e6;
+    }
+
+    th,
+    td {
+        padding: 10px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #343a40;
+        color: #fff;
+    }
+
+    a {
+        color: #007bff;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    footer {
+        background-color: #343a40;
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+        margin-top: auto;
+    }
